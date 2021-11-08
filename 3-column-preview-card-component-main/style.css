@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+h1 {
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  font-family: "Big Shoulders Display", cursive;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  padding-right: 15px;
+  margin-bottom: 48px;
+}
+
+.icon {
+  margin-bottom: 32px;
+}
+
+.main-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  margin: 92px;
+}
+
+.preview-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-1 {
+  background-color: hsl(31, 77%, 52%);
+  padding: 48px;
+  line-height: 1.8;
+  border-top-left-radius: 11px;
+  border-bottom-left-radius: 11px;
+}
+
+.card-2 {
+  background-color: hsl(184, 100%, 22%);
+  padding: 48px;
+  line-height: 1.8;
+}
+
+.card-3 {
+  background-color: hsl(179, 100%, 13%);
+  padding: 48px;
+  line-height: 1.8;
+  border-top-right-radius: 11px;
+  border-bottom-right-radius: 11px;
+}
+
+.btn-1 {
+  color: hsl(31, 77%, 52%);
+  height: 42px;
+  width: 125px;
+  font-weight: 700;
+  border-radius: 20px;
+  border: none;
+}
+
+.btn-2 {
+  color: hsl(184, 100%, 22%);
+  height: 42px;
+  width: 125px;
+  font-weight: 700;
+  border-radius: 20px;
+  border: none;
+}
+
+.btn-3 {
+  color: hsl(179, 100%, 13%);
+  height: 42px;
+  width: 125px;
+  font-weight: 700;
+  border-radius: 20px;
+  border: none;
+}
+
+@media (max-width: 450px) {
+  .preview-card {
+    grid-template-columns: 1fr;
+  }
+
+  .card-1 {
+    padding: 24px;
+    font-size: 11px;
+    border-top-right-radius: 11px;
+    border-bottom-left-radius: unset;
+  }
+
+  .card-2 {
+    padding: 24px;
+    font-size: 11px;
+  }
+
+  .card-3 {
+    padding: 24px;
+    font-size: 11px;
+    border-top-right-radius: unset;
+    border-bottom-left-radius: 11px;
+  }
+
+  .icon {
+    margin-bottom: 24px;
+  }
+
+  h1 {
+    margin-bottom: 24px;
+  }
+
+  p {
+    margin-bottom: 24px;
+  }
+}
